@@ -1,0 +1,40 @@
+body {
+    background-color: darkgray;
+}
+h1 {
+    text-align: center;
+}
+hr {
+    border-color: black;
+}
+.borda {
+    border-width: 2px; 
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 480px;
+}
+.calculadora {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    width: 750px;
+    height: 450px;
+}
+#num1 {
+    width: 100%;
+}
+#num2 {
+    width: 100%;
+}
+#operacao {
+    width: 100%;
+}
+#resultado {
+    display: flex;
+  justify-content: center;
+  color: #0f800f;
+}

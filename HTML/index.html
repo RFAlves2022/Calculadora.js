@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="borda">
+
+    <div class="calculadora">
+
+        <div class="titulo">
+            <h1>Calculadora</h1>
+            <hr>
+        </div>
+
+        <div class="input1">
+            <label>Primeiro número:</label><br>
+            <input type="number" id="num1" placeholder="Digite aqui o primeiro número"><br><br>
+        </div>
+
+        <div class="operacoes">
+            <label >Escolha uma operação:</label><br>
+            <select id="operacao">
+                <option value="selecione">---Selecione---</option>
+                <option value="+">Soma</option>
+                <option value="*">Multiplicação</option>
+                <option value="/">Divisão</option>
+                <option value="-">Subtração</option>
+            </select><br><br>
+        </div>
+
+        <div class="input2">
+            <label>Segundo número: </label><br>
+            <input type="number" id="num2" placeholder="Digite aqui o segundo número"><br><br>
+        </div>
+
+            <button id="buttonResult" onclick="calcula(document.getElementById('num1').value,document.getElementById('num2').value)" >Calcular</button><br>
+
+            <hr>
+            <h2>Resultado:</h2><h2 id="resultado"></h2>
+            <hr>
+            <br><br>
+            
+
+            <script src="../JavaScript/div.js"></script>
+            <script src="../JavaScript/calcula.js"></script>
+            <script src="../JavaScript/soma.js"></script>
+            <script src="../JavaScript/sub.js"></script>
+            <script src="../JavaScript/mult.js"></script>
+    </div>
+    </div>
+</body>
+</html>
